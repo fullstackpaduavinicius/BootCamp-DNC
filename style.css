@@ -3,21 +3,25 @@
         
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;700&display=swap');
 
-    :root{
+    :root {
         --azul-dnc: #0c70f2;
         --preto-dnc: #303030;
         --cinza-dnc: #c9c9c9;
-
         --font-padrao: 'Inter';
     }
-body{
-    margin: 0px;
-     padding: 0px;
-     background: linear-gradient(0deg, #303030, #303030);
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%) #303030;
-    background-repeat: no-repeat;
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(0deg, #303030, #303030);
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%) #303030;
+        background-repeat: no-repeat;
+    }
+    
+   
+    
 
-}
+
     #principal{
    
     width: 100%;
@@ -260,52 +264,83 @@ footer .linhainferior a:hover{
     color: var(--cinza-dnc);
 }
 
-@media only screen and (max-width: 600PXs){
-
+.textosuperior {
+    text-align: center;
 }
-#principal{
+
+.formaction {
+    width: 600px; /* Defina a largura do formulário */
+    margin: 0 auto; /* Centraliza horizontalmente na tela */
+}
+
+.formgrup-container {
+    display: flex;
+    justify-content: center;
+}
+
+.formgrup {
     display: flex;
     flex-direction: column;
-    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#menu{
-    flex-direction: column;
-    width: 100%;
-    margin: 0px;
+/* Outras regras de estilo existentes */
 
+
+/* Estilos para dispositivos com largura de tela menor ou igual a 600px (dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+
+    #principal{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+    #menusuperior {
+        
+        flex-direction: column;
+        width: 100%;
+        
+    }  
+    #menusuperior a {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        margin: 0px;
+    }
+    #principal button {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0px;
+    }
+    section {
+        margin-top: 100px; /* Ajuste conforme necessário */
+        margin-bottom: 100px; /* Ajuste conforme necessário */
+    }
+    header h1 {
+        font-size: 38px;
+    }
+    header h2 {
+        font-size: 28px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .formaction {
+        width: 100%; /* Altera a largura do formulário para preencher toda a largura da tela */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-right: 0; /* Remove a margem direita */
+    }
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+    .checkboxitens label{
+        font-size: 15px;
+        width: 50%;
+        justify-content: center;
+        
+    
+    }
 }
-#menu a{
-    display: flex;
-    height: 50px;
-    align-items: center;
-
-}
-#principal button{
-    width: 100%;
-    margin: 0px;
-
-}
-
-/*section*/
-
-section h1{
-    font-size: 38px;
-
-}
-section h2{
-    font-size: 28px;
-    padding-right: 5px;
-    padding-left: 15px;
-}
-form{
-    width: 95%;
-    font-size: 20px;
-
-}
-
-.checkboxitens label{
-    font-size: 17px;
-
-}
-
