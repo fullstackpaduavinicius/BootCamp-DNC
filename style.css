@@ -269,8 +269,8 @@ footer .linhainferior a:hover{
 }
 
 .formaction {
-    width: 600px; /* Defina a largura do formulário */
-    margin: 0 auto; /* Centraliza horizontalmente na tela */
+    width: 600px; 
+    margin: 0 auto; 
 }
 
 .formgrup-container {
@@ -285,10 +285,10 @@ footer .linhainferior a:hover{
     margin-bottom: 10px;
 }
 
-/* Outras regras de estilo existentes */
 
 
-/* Estilos para dispositivos com largura de tela menor ou igual a 600px (dispositivos móveis) */
+
+
 @media only screen and (max-width: 600px) {
 
     #principal{
@@ -316,8 +316,8 @@ footer .linhainferior a:hover{
         padding: 0px;
     }
     section {
-        margin-top: 100px; /* Ajuste conforme necessário */
-        margin-bottom: 100px; /* Ajuste conforme necessário */
+        margin-top: 100px;
+        margin-bottom: 100px; 
     }
     header h1 {
         font-size: 38px;
@@ -328,9 +328,9 @@ footer .linhainferior a:hover{
         padding-left: 5px;
     }
     .formaction {
-        width: 100%; /* Altera a largura do formulário para preencher toda a largura da tela */
-        margin-left: 0; /* Remove a margem esquerda */
-        margin-right: 0; /* Remove a margem direita */
+        width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
     }
     form {
         width: 95%;
@@ -342,5 +342,21 @@ footer .linhainferior a:hover{
         justify-content: center;
         
     
+    }
+    /* footer */
+
+    footer .linha1{
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    footer .endereço{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    footer .linhainferior{
+        width: 95%;
+        margin-bottom: 20px;
+       
     }
 }
